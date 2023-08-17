@@ -1,0 +1,195 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    position: relative;
+    top: 7rem;
+}
+/* Header */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+header img {
+    width: 10rem;
+    height: 5rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+    margin-left: 0.9rem;
+}
+
+li {
+    display: inline-block; 
+    padding: 1rem;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+nav {
+    display: inline-block;
+    margin-right: 2rem;
+    justify-self: flex-end;
+}
+
+header {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #e2e3e3;
+    z-index: 100;
+    flex: 1;
+}
+
+.banner {
+    width: 100%;
+    height: 50rem;
+    background-image: url("sources/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+/* About */
+.title {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    margin: 5rem 0 0.4rem;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-weight: light;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    border: 3px solid #f9f9f9;
+    padding: 1.5rem;
+    box-shadow: 1rem 1rem 0.5rem #dcdddd;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+/* Model */
+.car-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.text {
+    width: 30rem;
+    text-align: center;
+    margin-top: .8rem;
+}
+
+.name {
+    display: block;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.car-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-info img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #afecf4;
+    box-shadow: 2px 2px 0.5px #d1f4f9;
+}
+
+/* Team */
+.human-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.personal-info img {
+    width: 30rem;
+    height: 40rem;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #84d98c;
+    box-shadow: 2px 2px 0.5px #c5edc9;
+}
+
+/* Contact */
+.contact-info {
+    font-size: 1.5rem;
+    font-weight: light;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    border: 3px solid #f9f9f9;
+    padding: 1.5rem;
+    box-shadow: 1rem 1rem 0.5rem #dcdddd;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #ed98d1;
+}
+
+/* Footer */
+footer p {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1040px) {
+    header h1 {
+        display: none;
+    }
+
+    .banner {
+        height: 25rem;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    header img {
+        width: 4rem;
+        height: 2rem;
+    }
+
+    html, body {
+        font-size: 10px;
+    }
+
+    li a {
+        font-size: 1.2rem;
+    }
+
+}
