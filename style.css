@@ -185,11 +185,20 @@ footer p {
     }
 
     html, body {
-        font-size: 10px;
+        font-size: 10.8px;
     }
 
     li a {
         font-size: 1.2rem;
     }
+}
 
+@media only screen and (max-width: 380px) {
+    html, body {
+        font-size: 7.5px;
+    }
+
+    .description {
+        text-align: justify;
+    }
 }
